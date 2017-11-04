@@ -17,17 +17,7 @@ bootstrap.min.css">
 <h3>Access Umass</h3>
   <div id="map"></div>
   <script>
-    function initMap() {
-      var umass = {lat: 42.391016, lng: -72.527137};
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: umass
-      });
-      var marker = new google.maps.Marker({
-        position: umass,
-        map: map
-      });
-    }
+    src="js/main.js"
   </script>
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpEJwyd-_DKnhsALk5Ecrt9NJTPPQmAE0&callback=initMap">
