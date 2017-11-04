@@ -1,12 +1,15 @@
 function initMap() {
-  var umass = {lat: 42.391016, lng: -72.527137};
+  var umass = {
+    lat: 42.391016,
+    lng: -72.527137,
+  };
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
-    center: umass
+    center: umass,
   });
   var marker = new google.maps.Marker({
     position: umass,
-    map: map
+    map: map,
   });
 
   /* Code to create an overaly over the map
