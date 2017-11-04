@@ -1,47 +1,56 @@
 <!doctype html>
 <html lang="en">
- <!-- Header -->
- <head>
- <!-- Required meta tags -->
- <title>UMass Access Site</title>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <link rel="shortcut icon" type="images/x-icon" href="favicon.ico" />
- <!-- Bootstrap CSS -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/
+<!-- Header -->
+
+<head>
+    <!-- Required meta tags -->
+    <title>UMass Access Site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="images/x-icon" href="favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/
 bootstrap.min.css">
-<!-- Main CSS -->
- <link rel="stylesheet" href="css/main.css">
- </head>
- <body>
-<h3>UMass Access</h3>
-  <div id="map"></div>
-  <script
-    src="js/main.js">
-  </script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpEJwyd-_DKnhsALk5Ecrt9NJTPPQmAE0&callback=initMap">
-  </script>
- <div>
-   <!--Footer-->
-   <footer class="page-footer blue center-on-small-only">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
 
-     <!--Copyright-->
-     <div class="footer-copyright">
-       <div class="container-fluid">
-         © 2017 Copyright: <a href="https://www.umass-access.com"> UMass Access </a>
-       </div>
-     </div>
-   </footer>
- </div>
+<body>
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Directions</a>
+        <a href="#">Favorites</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <span onclick="openNav()" class="glyphicon glyphicon-menu-hamburger" id="menuButton"></span>
+            </div>
+            <div class="col-md-8">
+                <h3>UMass Access</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="main" class="row">
+            <div class="col-md-12">
+                <div id="map"></div>
+                <button id="postButton">+</button>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo8LYuPCTZ360ChNC6E3H3ifNmtbEU7bg&callback=initMap"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.
+js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.
+js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
 
- <!-- jQuery first, then Tether, then Bootstrap JS. -->
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.
-js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.
-js"></script>
- <!-- Main JS -->
- <script src="js/main.js"></script>
- </body>
 </html>

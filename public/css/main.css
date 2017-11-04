@@ -1,9 +1,97 @@
 .page {
-  padding-bottom: 20px;
-  padding-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #map {
-  height: 400px;
-  width: 100%;
+    height: 400px;
+    transition: margin-left .5s;
+    width: 100%;
+    /*padding: 20px;*/
+}
+
+#img_container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 186px;
+    height: 157px;
+}
+
+#postButton {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+#menuButton {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 50px;
+}
+
+.sidenav {
+    background-color: #111;
+    /* Black*/
+    height: 100%;
+    /* 100% Full-height */
+    left: 0;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    position: fixed;
+    /* Stay in place */
+    top: 0;
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    z-index: 1;
+    /* Stay on top */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    color: #818181;
+    display: block;
+    font-size: 25px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    font-size: 36px;
+    margin-left: 50px;
+    position: absolute;
+    right: 25px;
+    top: 0;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
