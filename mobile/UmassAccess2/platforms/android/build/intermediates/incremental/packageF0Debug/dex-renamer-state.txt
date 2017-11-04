@@ -1,0 +1,4 @@
+#Sat Nov 04 09:09:02 EDT 2017
+base.0=C\:\\Users\\Kirs\\Code\\Git Repos\\access-umass\\mobile\\UmassAccess2\\platforms\\android\\build\\intermediates\\transforms\\dex\\F0\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\Kirs\\Code\\Git Repos\\access-umass\\mobile\\UmassAccess2\\platforms\\android\\build\\intermediates\\transforms\\dex\\F0\\debug\\folders\\1000\\1f\\main\\classes.dex

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\Input-2017.1.1030-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a973d2e002f236d63e4b0b3bb95454b2ed4dc790">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\intermediates-exploded-aar-Input-2017.1.1030-dev-release_824aebf21402b298f2a25fb5d13295cdda66c6ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-support-compat-25.3.1_934d210e9d7cb7e1214e5a041ae9536ab7867a74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\Data-2017.1.1030-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="31ecd0832f76d83defcff7f8b395008bf3b153bd">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\intermediates-exploded-aar-Data-2017.1.1030-dev-release_28873830314ff2e17d69679e167a070e4f0e6f92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\Primitives-2017.1.1030-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9001cb8dbd0c0f46e73929f0b0667c00c2835880">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\intermediates-exploded-aar-Primitives-2017.1.1030-dev-release_4ee00fad514f70ddb8236525477977c8bda555fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\design\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-design-25.3.1_1f2f80775a51a93cf740f431964f86f8e3184390.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-recyclerview-v7-25.3.1_8d4fa970f034b45779f0dc78939fc315a25128b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-appcompat-v7-25.3.1_8a7ab8fca8e81680fb20d3a17374c4174d9a6631.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-support-core-ui-25.3.1_f6d2d1f895ce7e696717f409e3d7b9e05f5178eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1030-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="912812cca1fdace3ef9ba9c0a7081db4155767d5">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\intermediates-exploded-aar-Feedback-2017.1.1030-dev-release_6dc7f0406a1f2481d6cb40d185367cc1b631226c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-support-media-compat-25.3.1_ae5d621b14a2752ab647009b91ae33a5726caafb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\List-2017.1.1030-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd3872a778741ba6ef9d5452e122a54d16b0564f">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\intermediates-exploded-aar-List-2017.1.1030-dev-release_325d0c1f98bdee4ab8d241925b24a669bbbfcd4f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-transition-25.3.1_b8e48fd00ce450fe589ed56265155bc96e8ea888.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\Chart-2017.1.1030-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67070b6d74d76c40032b857e9fcf25b196fd07f5">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\intermediates-exploded-aar-Chart-2017.1.1030-dev-release_f313def3beb72c558ee6573eb4777f63b4628986.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\nativescript-optimized\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="746274223beb11b1cda7854d7eec3038695c2c93">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\intermediates-exploded-aar-nativescript-optimized_65e2e818eb83525befd3593c2501d66d56105e49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-animated-vector-drawable-25.3.1_c99cb818af37ff1ff8128bd10665b5daffb2701d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-support-core-utils-25.3.1_1917826f01a912a74bdcf7b76cec8201741f2677.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-support-v4-25.3.1_17c0cbeb5e731e6dcb8073632a94b5e28e72b7e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\Common-2017.1.1030-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="23e24cb11d199bb64e56968563bb6ea219204cec">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\intermediates-exploded-aar-Common-2017.1.1030-dev-release_0905f86439f4d1b787925b4687855c93b504b30d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\support-annotations-25.3.1_07cc1bdab6386cc71ca9e51c0b2d242e9420314e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\Gauges-2017.1.1030-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb5e99e8a8b94d66179ccbf5f2fbe41ba084fbe9">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\intermediates-exploded-aar-Gauges-2017.1.1030-dev-release_3ee49e6ca9c019e098db499c1cd9b1fe3ecabdea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-support-vector-drawable-25.3.1_58eeb18f03347055d4b124927b025f0f55535b69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\widgets-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd431d6aa9ce9dc0d429fcd239d412a82ea0e9a7">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\intermediates-exploded-aar-widgets-release_c1e74aa833ec27e4e0aea7ef51ecc6ebb8d6afba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\Kirs\Code\Git Repos\access-umass\mobile\UmassAccess\platforms\android\build\intermediates\pre-dexed\F0F1\debug\com.android.support-support-fragment-25.3.1_285dce68bea27558f5e40e1effe78ead88f2c956.jar" />
+    </item>
+
+</items>
