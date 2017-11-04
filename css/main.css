@@ -1,0 +1,9 @@
+.page {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#map {
+        height: 400px;
+        width: 100%;
+       }
