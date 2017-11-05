@@ -1,9 +1,9 @@
 {
-	"time": "Sat Nov 04 2017 09:42:55 GMT-0400 (Eastern Daylight Time)",
+	"time": "Sat Nov 04 2017 17:51:32 GMT-0400 (Eastern Daylight Time)",
 	"nativePlatformStatus": "3",
 	"bundle": false,
 	"release": false,
-	"changesRequireBuild": false,
+	"changesRequireBuild": true,
 	"projectFileHash": "248873032ada76051705742ef0d373c2eb2dd6fef09bcd9a385f1492ed39a1fa",
-	"changesRequireBuildTime": "Sat Nov 04 2017 09:41:31 GMT-0400 (Eastern Daylight Time)"
+	"changesRequireBuildTime": "Sat Nov 04 2017 17:51:32 GMT-0400 (Eastern Daylight Time)"
 }
