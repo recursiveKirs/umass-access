@@ -4,6 +4,15 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.template import Context, loader
+from django.core.exceptions import ObjectDoesNotExist
+from django.http import HttpResponse, JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.renderers import JSONRenderer
+from rest_framework.parsers import JSONParser
+from umapp.models import user, marker_type, marker, comment, disability, user_disability, location, entrance, favorite
+from umapp.serializers import userSerializer, marker_typeSerializer, markerSerializer, commentSerializer, disabilitySerializer, user_disabilitySerializer, locationSerializer, entranceSerializer, favoriteSerializer
+import json
+
 
 # Create your views here.
 
@@ -41,12 +50,69 @@ def mobileBrowser(request):
  
 def index(request):
     '''Render the index page'''
- 
+     print(request.body)
     if mobileBrowser(request):
         t = loader.get_template('m_index.html')
     else:
-        t = loader.get_template('index.html')
+        t = loader.get_template('index.html', 'js/main.js', 'css/main.css')
  
     c = Context( { }) # normally your page data would go here
  
     return HttpResponse(t.render(c))
+
+@csrf_exempt
+def connection(request, mac_add):
+    try:
+        existing_user = user.objects.get(id=mac_add)
+	response = HttpResponse({
+		user_id : existing_user.id
+	}, content_type='application/json')
+        return response
+ 
+    except ObjectDoesNotExist:
+        new_user = user(mac_add)
+	new_user.save()
+	response = HttpResponse({
+		user_id : new_user.id
+	}, content_type='application/json')
+	return response
+
+@csrf_exempt
+# dis_list is an array of disabilities
+def profile(request, usr_id, dis_list)
+    disability_list = json.loads(dis_list)[disabilities]
+    for index in range(0, len(disability_list)):
+        new_user_disability = user_disability(usr_id, disability_list[index]):
+	new_user_disability.save()
+    return
+
+@csrf_exempt
+def create_marker(request, usr_id, latitude, longitude, marker_type_id):
+    new_marker = marker(marker_type_id, longitude, latitude, 0, 0, usr_id)
+    new_marker.save()
+    return
+
+@csrf_exempt
+def request_marker(request, marker_id):
+    return_marker = marker.objects.get(id=marker_id)
+    longitude = return_marker.longitude
+    latitude = return_marker.latitude
+    up_votes = return_marker.up_votes
+    down_votes = return_marker.down_votes
+    response = HttpResponse({
+		longitude : longitude, latitude : latitude, up_votes : up_votes, down_votes : down_votes
+    }, content_type='application/json')
+    return response
+
+
+
+
+
+
+
+
+
+
+
+
+
