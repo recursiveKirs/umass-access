@@ -9,53 +9,36 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+The list of software you need to install is: Android Studio, Django, Apache, PHP, and MySQL. 
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+A step by step series of examples that tell you have to get a development env running.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+To download Android Studio, you can get it from their website download page at https://developer.android.com/studio/index.html
+To download Django, you follow the official documentation at https://docs.djangoproject.com/en/1.11/topics/install/
+To download Apache, PHP, and MySQL, follow the guide at https://jason.pureconcepts.net/2015/10/install-apache-php-mysql-mac-os-x-el-capitan/
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+You can run tests on this system by testing to see whether the app is able to inform the campus community and visitors of potential obstructions or changes to areas of campus.
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+Test to see whether the app is able to create different kinds of obstructions.
 
-```
-Give an example
-```
+Test to see whether the app is able to maintain real-time updates for different markers of obstructions.
 
-### And coding style tests
+Test to see whether the app is able to have functions for routes and navigation.
 
-Explain what these tests test and why
+Test to see whether the app is able to save different profiles of different users of varying disabilities to be better tailored to each and individual user.
 
-```
-Give an example
-```
+Test to see whether the app is able to provide different paths for users of varying disabilities.
+
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+In the end, the mobile app, the Django server, and the MySQL database will be hosted on Amazon's AWS cloud services. This allows the app and servers to be very accessible to developers and collaborators of this project. 
 
 ## Built With
 
