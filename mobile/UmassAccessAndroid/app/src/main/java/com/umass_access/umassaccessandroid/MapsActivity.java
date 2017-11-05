@@ -162,11 +162,8 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMarker
         if (requestCode == 1) {
             if(resultCode == Activity.RESULT_OK){
                 int position=data.getIntExtra("result", 0);
+                Marker newMarker = createNewMarker(position, mMap);
 
-                Marker newMarker = mMap.addMarker(new MarkerOptions()
-                        .position(position_list[position])
-                        .title(marker_type_list[position])
-                        .snippet("Be Careful!"));
                 MarkerData newMarkerData = new MarkerData(0,0, position_list[position].longitude, position_list[position].latitude, 0);
                 newMarker.setTag(newMarkerData);
             }
@@ -176,4 +173,88 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMarker
             }
         }
     }//onActivityResult
+
+
+
+    private static Marker createNewMarker(int position, GoogleMap mMap){
+        Marker newMarker;
+
+        switch (position) {
+            case 0:  newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.ambulance1)));
+                break;
+            case 1:  newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.brokenpowerline1)));
+                break;
+            case 2:  newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.brokenwheelchairdoor1)));
+                break;
+            case 3:  newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.caraccident1)));
+                break;
+            case 4:  newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.carwalkwayblockage1)));
+                break;
+            case 5:  newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.constructionblockage1)));
+                break;
+            case 6:  newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.deadanimal1)));
+                break;
+            case 7:  newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.fallentree1)));
+                break;
+            case 8:  newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.firetruck1)));
+                break;
+            case 9:  newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.floodedarea1)));
+                break;
+            case 10: newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.pathclosed1)));
+                break;
+            default: newMarker = mMap.addMarker(new MarkerOptions()
+                    .position(position_list[position])
+                    .title(marker_type_list[position])
+                    .snippet("Be Careful!")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.potholelargehole1)));
+                break;
+        }
+        return newMarker;
+
+
+    }
 }

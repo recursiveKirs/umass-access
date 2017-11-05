@@ -68,7 +68,7 @@ public class BlockerMenuActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(BlockerMenuActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
+                Toast.makeText(BlockerMenuActivity.this, "You reported the obstruction, " +web[+ position], Toast.LENGTH_SHORT).show();
                 //TODO: Create a new marker and send it to the server
                 /*
                 Intent markerintent = new Intent(BlockerMenuActivity.this, MapsActivity.class);

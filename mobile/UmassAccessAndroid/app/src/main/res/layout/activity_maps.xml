@@ -15,14 +15,14 @@
         tools:context="com.umass_access.umassaccessandroid.MapsActivity" />
 
     <Button
-        android:id="@+id/report_obstruction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="13dp"
         android:onClick="openBlockerMenu"
-        android:text="Report Obstruction" />
+        android:background="@drawable/red_button"
+        android:id="@+id/report_obstruction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Report Obstruction"
+        style="@style/button_text" />
 
 </RelativeLayout>
 
