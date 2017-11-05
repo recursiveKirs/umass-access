@@ -158,7 +158,7 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMarker
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
+    // This function executes when an intent is returned from the blocker menu
         if (requestCode == 1) {
             if(resultCode == Activity.RESULT_OK){
                 int position=data.getIntExtra("result", 0);
