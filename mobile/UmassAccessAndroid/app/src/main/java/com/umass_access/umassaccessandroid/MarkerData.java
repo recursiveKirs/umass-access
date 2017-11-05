@@ -25,8 +25,8 @@ public class MarkerData {
     }
 
     public static String getMarkerType(int markerTypeId){
-        String[] marker_type = {"Construction", "Holes", "Car Accidents", "Ambulance", "Firetruck",
-                "Broken Door", "Vehicular Obstructions", "Broken Power Lines"};
+        String[] marker_type = {"Construction", "Hole", "Car Accident", "Ambulance", "Firetruck",
+                "Broken Door", "Vehicular Obstruction", "Broken Power Line"};
         String return_str = marker_type[markerTypeId];
         return(return_str);
     }
