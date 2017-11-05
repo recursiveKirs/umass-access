@@ -13,6 +13,8 @@ public class MarkerData {
 
     int id, markerTypeId,  upvotes, downvotes, userID;
     double longitude, latitude;
+    int[] marker_type = {"Construction", "Holes", "Car Accidents", "Ambulance", "Firetruck",
+                        "Broken Door", "Vehicular Obstructions", "Broken Power Lines"};
 
     public MarkerData(int id, int markerTypeId, double longitude, double latitude, int userID){
         this.id= id;
@@ -25,8 +27,7 @@ public class MarkerData {
     }
 
     public static String getMarkerType(int markerTypeId){
-        //TODO: Create lookup table
-        return "Pothole";
+        return(marker_type[markerTypeId]);
     }
 
     public static void addMarkerToMap(GoogleMap map, MarkerData markerD){
