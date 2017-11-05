@@ -16,6 +16,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 
 import com.google.android.gms.maps.model.Marker;
 
@@ -53,11 +58,22 @@ public class BlockerMenuActivity extends AppCompatActivity {
                                     int position, long id) {
                 Toast.makeText(BlockerMenuActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
                 //TODO: Create a new marker and send it to the server
-                
+                /*
+                Intent markerintent = new Intent(BlockerMenuActivity.this, MapsActivity.class);
+                markerintent.putExtra("intVariableName", position);
+                startActivity(markerintent);
+                */
+                Intent resultIntent = new Intent();
+                // TODO Add extras or a data URI to this intent as appropriate.
+                resultIntent.putExtra("result", position);
+                setResult(Activity.RESULT_OK, resultIntent);
+                finish();
             }
         });
 
     }
+
+
 }
 
 
