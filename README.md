@@ -5,7 +5,7 @@ An application that uses crowd-sourced information to inform the campus communit
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Download or clone this github repository, then make sure to have software necessary that is listed in prerequisites. See deployment for notes on what the project on a live system should function when completed.
 
 ### Prerequisites
 
@@ -56,7 +56,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Jason Zhuo** -*Team Member*
+* **Kirs Imsong** -*Team Member*
+* **Jack Kenney** -*Team Member*
+* **Billy Borkofsky** -*Team Member*
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
