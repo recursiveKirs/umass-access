@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-The list of software you need to install is: Android Studio, Django, Apache, PHP, and MySQL. 
+The list of software you need to install is: Android Studio, Django, Apache, PHP, and MySQL.
 
 ### Installing
 
@@ -38,7 +38,7 @@ Test to see whether the app is able to provide different paths for users of vary
 
 ## Deployment
 
-In the end, the mobile app, the Django server, and the MySQL database will be hosted on Amazon's AWS cloud services. This allows the app and servers to be very accessible to developers and collaborators of this project. 
+In the end, the mobile app, the Django server, and the MySQL database will be hosted on Amazon's AWS cloud services. This allows the app and servers to be very accessible to developers and collaborators of this project.
 
 ## Built With
 
