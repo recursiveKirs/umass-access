@@ -16,7 +16,9 @@ The list of software you need to install is: Android Studio, Django, Apache, PHP
 A step by step series of examples that tell you have to get a development env running.
 
 To download Android Studio, you can get it from their website download page at https://developer.android.com/studio/index.html
+
 To download Django, you follow the official documentation at https://docs.djangoproject.com/en/1.11/topics/install/
+
 To download Apache, PHP, and MySQL, follow the guide at https://jason.pureconcepts.net/2015/10/install-apache-php-mysql-mac-os-x-el-capitan/
 
 ## Running the tests
