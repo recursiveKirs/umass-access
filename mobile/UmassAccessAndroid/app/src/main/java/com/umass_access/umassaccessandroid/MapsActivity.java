@@ -2,16 +2,26 @@ package com.umass_access.umassaccessandroid;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -20,6 +30,48 @@ import static com.umass_access.umassaccessandroid.MarkerData.getMarkerType;
 
 public class MapsActivity extends FragmentActivity implements GoogleMap.OnMarkerClickListener, OnMapReadyCallback  {
     private GoogleMap mMap;
+    static String[] marker_type_list = {"Ambulence",
+                                        "Down Power Line",
+                                        "Broken Power Door",
+                                        "Car Accident",
+                                        "Car Blockage",
+                                        "Construction",
+                                        "Dead Animal",
+                                        "Fallen Branches",
+                                        "Firetruck",
+                                        "Flooded Area",
+                                        "Closed Path",
+                                        "PotHole"};
+
+    static LatLng[] position_list = { new LatLng(42.388417, -72.524316),
+                                      new LatLng(42.395524, -72.533099),
+                                      new LatLng(42.393679, -72.528658),
+                                      new LatLng(42.388512, -72.532105),
+                                      new LatLng(42.389803, -72.531468),
+                                      new LatLng(42.393678, -72.528024),
+                                      new LatLng(42.392990, -72.528484),
+                                      new LatLng(42.395588, -72.531342),
+                                      new LatLng(42.388836, -72.528139),
+                                      new LatLng(42.389545, -72.526484),
+                                      new LatLng(42.388572, -72.524764),
+                                      new LatLng(42.394109, -72.520836)
+    };
+
+    static int[] imageId_list = {
+            R.drawable.ambulance,
+            R.drawable.brokenpowerline,
+            R.drawable.brokenwheelchairdoor,
+            R.drawable.caraccident,
+            R.drawable.carwalkwayblockage,
+            R.drawable.constructionblockage,
+            R.drawable.deadanimal,
+            R.drawable.fallentree,
+            R.drawable.firetruck,
+            R.drawable.floodedarea,
+            R.drawable.pathclosed,
+            R.drawable.potholelargehole
+    };
+
     static LatLng construction = new LatLng(42.394109, -72.527355);
     static LatLng dubois = new LatLng(42.389735, -72.528279);
     static LatLng ilc  = new LatLng(42.391006, -72.526201);
@@ -72,21 +124,32 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMarker
 
     @Override
     public boolean onMarkerClick(final Marker marker) {
-        //TODO
-        /*
-        // Retrieve the data from the marker.
-        Integer clickCount = (Integer) marker.getTag();
 
-        // Check if a click count was set, then display the click count.
-        if (clickCount != null) {
-            clickCount = clickCount + 1;
-            marker.setTag(clickCount);
-            Toast.makeText(this,
-                    marker.getTitle() +
-                            " has been clicked " + clickCount + " times.",
-                    Toast.LENGTH_SHORT).show();
-        }
-        */
+        // get a reference to the already created main layout
+        RelativeLayout mainLayout = (RelativeLayout) findViewById(R.id.activity_maps_id);
+
+        // inflate the layout of the popup window
+        LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+        View popupView = inflater.inflate(R.layout.upvote_window, null);
+
+        // create the popup window
+        int width = LinearLayout.LayoutParams.WRAP_CONTENT;
+        int height = LinearLayout.LayoutParams.WRAP_CONTENT;
+        boolean focusable = true; // lets taps outside the popup also dismiss it
+        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+
+        // show the popup window
+        popupWindow.showAtLocation(mainLayout, Gravity.CENTER, 0, 0);
+
+        // dismiss the popup window when touched
+        popupView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                popupWindow.dismiss();
+                return true;
+            }
+        });
+
         // Return false to indicate that we have not consumed the event and that we wish
         // for the default behavior to occur (which is for the camera to move such that the
         // marker is centered and for the marker's info window to open, if it has one).
@@ -99,19 +162,17 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMarker
         if (requestCode == 1) {
             if(resultCode == Activity.RESULT_OK){
                 int position=data.getIntExtra("result", 0);
+
                 Marker newMarker = mMap.addMarker(new MarkerOptions()
-                        .position(ilc)
-                        .title("ILC"));
-                MarkerData newMarkerData = new MarkerData(0,0, ilc.longitude, ilc.latitude, 0);
+                        .position(position_list[position])
+                        .title(marker_type_list[position])
+                        .snippet("Be Careful!"));
+                MarkerData newMarkerData = new MarkerData(0,0, position_list[position].longitude, position_list[position].latitude, 0);
                 newMarker.setTag(newMarkerData);
             }
             if (resultCode == Activity.RESULT_CANCELED) {
                 //Write your code if there's no result
-                Marker newMarker = mMap.addMarker(new MarkerOptions()
-                        .position(dubois)
-                        .title("Dubois Library"));
-                MarkerData newMarkerData = new MarkerData(0,0, dubois.longitude, dubois.latitude, 0);
-                newMarker.setTag(newMarkerData);
+
             }
         }
     }//onActivityResult

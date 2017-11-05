@@ -15,7 +15,7 @@
         android:horizontalSpacing="10dp"
         android:numColumns="3"
         android:stretchMode="spacingWidthUniform"
-        android:verticalSpacing="100dp"
+        android:verticalSpacing="70dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 

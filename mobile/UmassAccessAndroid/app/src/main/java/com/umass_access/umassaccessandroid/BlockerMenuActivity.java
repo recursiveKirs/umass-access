@@ -27,20 +27,33 @@ import com.google.android.gms.maps.model.Marker;
 public class BlockerMenuActivity extends AppCompatActivity {
 
     GridView grid;
-    String[] web = {
-            "Google",
-            "Github",
-            "Instagram",
-            "Facebook",
-            "Flickr"
-    } ;
-    int[] imageId = {
-            R.drawable.icons8_car,
-            R.drawable.icons8_ellipse,
-            R.drawable.icons8_evergreen,
-            R.drawable.icons8_penguin,
-            R.drawable.icons8_vlc
-
+    static String[] web = {
+            "Ambulence",
+            "Down Power Line",
+            "Broken Power Door",
+            "Car Accident",
+            "Car Blockage",
+            "Construction",
+            "Dead Animal",
+            "Fallen Branches",
+            "Firetruck",
+            "Flooded Area",
+            "Closed Path",
+            "PotHole"
+    };
+    static int[] imageId = {
+            R.drawable.ambulance,
+            R.drawable.brokenpowerline,
+            R.drawable.brokenwheelchairdoor,
+            R.drawable.caraccident,
+            R.drawable.carwalkwayblockage,
+            R.drawable.constructionblockage,
+            R.drawable.deadanimal,
+            R.drawable.fallentree,
+            R.drawable.firetruck,
+            R.drawable.floodedarea,
+            R.drawable.pathclosed,
+            R.drawable.potholelargehole
     };
 
     @Override
@@ -52,7 +65,6 @@ public class BlockerMenuActivity extends AppCompatActivity {
         grid=(GridView)findViewById(R.id.blockergrid);
         grid.setAdapter(adapter);
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
