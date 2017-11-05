@@ -50,7 +50,7 @@ In the end, the mobile app, the Django server, and the MySQL database will be ho
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](http://static.mlh.io/docs/mlh-code-of-conduct.pdf) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
