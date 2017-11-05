@@ -10,24 +10,53 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
+import android.widget.Toast;
+
+import com.google.android.gms.maps.model.Marker;
 
 public class BlockerMenuActivity extends AppCompatActivity {
+
+    GridView grid;
+    String[] web = {
+            "Google",
+            "Github",
+            "Instagram",
+            "Facebook",
+            "Flickr"
+    } ;
+    int[] imageId = {
+            R.drawable.icons8_car,
+            R.drawable.icons8_ellipse,
+            R.drawable.icons8_evergreen,
+            R.drawable.icons8_penguin,
+            R.drawable.icons8_vlc
+
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blocker_menu);
 
-        GridView blockergrid = (GridView) findViewById(R.id.blockergrid);
-        blockergrid.setAdapter(new ImageAdapter(this));
+        CustomGrid adapter = new CustomGrid(BlockerMenuActivity.this, web, imageId);
+        grid=(GridView)findViewById(R.id.blockergrid);
+        grid.setAdapter(adapter);
+        grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-        blockergrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View v,
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(BlockerMenuActivity.this, "" + position,
-                        Toast.LENGTH_SHORT).show();
+                Toast.makeText(BlockerMenuActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
+                //TODO: Create a new marker and send it to the server
+                
             }
         });
+
     }
 }
 
